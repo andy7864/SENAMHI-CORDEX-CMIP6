@@ -33,3 +33,8 @@ This repository is intended for researchers and operational modeling centers int
 | Sea Surface Temperature | `sst_update = 1` | Daily SST update enabled |
 | Greenhouse gases | `ghg_input = 1` | Time-varying greenhouse gas concentrations |
 | Aerosol lateral boundary conditions | `use_aero_icbc = .true.` | Enabled |
+
+
+## Domain configuration
+
+![WRF Domain](https://raw.githubusercontent.com/andy7864/SENAMHI-CORDEX-CMIP6/main/dominio_wrf.png)
