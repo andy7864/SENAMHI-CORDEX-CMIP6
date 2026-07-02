@@ -1,0 +1,59 @@
+&share
+ wrf_core = 'ARW',
+ max_dom = 1,
+ start_date = '2021-01-01_00:00:00',
+ end_date   = '2021-01-01_21:00:00',
+ interval_seconds = 10800
+/
+
+&geogrid
+ parent_id         =   1,
+ parent_grid_ratio =   1,
+ i_parent_start    =   1,
+ j_parent_start    =   1,
+ e_we              =  460,
+ e_sn              =  390,
+ geog_data_res = '30s',
+ dx = 25000,
+ dy = 25000,
+ map_proj = 'mercator',
+ ref_lat   = -19.79801,
+ ref_lon   = -57.50568,
+ truelat1  = -25.544,
+ truelat2  = 0,
+ stand_lon = -69.967,
+ geog_data_path = '/scratch/DMA/SMN/WPS_GEOG/'
+/
+
+&ungrib
+ out_format = 'WPS',
+ prefix = 'FILE',
+/
+
+&metgrid
+ fg_name = 'FILE',
+ constants_name = 'QNWFA_QNIFA_SIGMA_MONTHLY.dat',
+ io_form_metgrid = 2,
+/
+
+&domain_wizard
+ grib_data_path = 'null',
+ grib_vtable = 'null',
+ dwiz_name    =SA25CRDX
+ dwiz_desc    =
+ dwiz_user_rect_x1 =332
+ dwiz_user_rect_y1 =449
+ dwiz_user_rect_x2 =907
+ dwiz_user_rect_y2 =852
+ dwiz_show_political =true
+ dwiz_center_over_gmt =true
+ dwiz_latlon_space_in_deg =10
+ dwiz_latlon_linecolor =-8355712
+ dwiz_map_scale_pct =12.5
+ dwiz_map_vert_scrollbar_pos =0
+ dwiz_map_horiz_scrollbar_pos =0
+ dwiz_gridpt_dist_km =25.0
+ dwiz_mpi_command =null
+ dwiz_tcvitals =null
+ dwiz_bigmap =Y
+/
