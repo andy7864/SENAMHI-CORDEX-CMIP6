@@ -19,3 +19,17 @@ Physical parameterization tables and documentation
 This repository is intended for researchers and operational modeling centers interested in reproducing, evaluating, or extending CORDEX-CMIP6 regional climate simulations using WRF-ARW version 4.5.1.
 
 ## Physical Parameterizations
+
+| Component | WRF Option | Scheme |
+|-----------|:----------:|--------|
+| Microphysics | `mp_physics = 28` | Thompson Aerosol-Aware |
+| Longwave radiation | `ra_lw_physics = 4` | RRTMG |
+| Shortwave radiation | `ra_sw_physics = 4` | RRTMG |
+| Surface layer | `sf_sfclay_physics = 2` | Monin-Obukhov (Janjic Eta Similarity) |
+| Land surface model | `sf_surface_physics = 2` | Noah Land Surface Model |
+| Planetary Boundary Layer | `bl_pbl_physics = 2` | Mellor–Yamada–Janjic (MYJ) |
+| Cumulus parameterization | `cu_physics = 6` | Tiedtke |
+| Urban physics | `sf_urban_physics = 0` | None |
+| Sea Surface Temperature | `sst_update = 1` | Daily SST update enabled |
+| Greenhouse gases | `ghg_input = 1` | Time-varying greenhouse gas concentrations |
+| Aerosol lateral boundary conditions | `use_aero_icbc = .true.` | Enabled |
