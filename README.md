@@ -17,3 +17,5 @@ Static domain definition files (geo_em)
 Physical parameterization tables and documentation
 
 This repository is intended for researchers and operational modeling centers interested in reproducing, evaluating, or extending CORDEX-CMIP6 regional climate simulations using WRF-ARW version 4.5.1.
+
+## Physical Parameterizations
